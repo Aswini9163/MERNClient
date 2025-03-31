@@ -1,0 +1,50 @@
+.bread{
+    background-color:  rgb(16, 14, 140);
+    padding: 27px 0px;
+}
+
+.bread h1{
+    color:#fff;
+    text-align: center;
+    font-size: 32px;
+}
+.bx_shadow{
+    box-shadow: 0px 0px 10px  rgb(16, 14, 140);;
+   padding: 20px 10px;
+}
+
+.bx_shadow input[type="submit"]{
+    background-color: rgb(16, 14, 140);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 10px 0px;
+    border: none;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title span {
+    color: red;
+}
+
+.decor{
+    text-decoration: none;
+}
+
+.aboutus p{
+    text-align: justify;
+    line-height: 28px;
+}
+.aboutus h6{
+    color: red;
+    font: bold;
+}
+
+.aboutus p i{
+    font-size: 30px;
+    color: blueviolet;
+}

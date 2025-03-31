@@ -1,0 +1,6 @@
+.header nav ul li a{
+    color:#000 !important;
+    text-transform : uppercase;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
