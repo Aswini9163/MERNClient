@@ -14,7 +14,7 @@ const StudentEdit = () => {
         const navigate = useNavigate();
 
         useEffect(()=>{
-            axios.get(`https://mern-9a42.onrender.com/user/${sid}`)
+            axios.get(`http://localhost:4000/user/${sid}`)
             .then((res)=> {
                 //console.log(res)
                 setName(res.data.name);
@@ -28,7 +28,7 @@ const StudentEdit = () => {
         },[])
         const editStudentData =(e) =>{
             e.preventDefault();
-            axios.put(`https://mern-9a42.onrender.com/user/${sid}`, {name,email,phone,address})
+            axios.put(`http://localhost:4000/user/${sid}`, {name,email,phone,address})
             .then((res)=>{ 
                 alert("studentinfo updated succ..")
                 /*setName('')

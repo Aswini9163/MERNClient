@@ -12,7 +12,7 @@ const ContactUs=()=>{
         const [message , setMessage]= useState("");
         const ContactFormData =(e)=>{
             e.preventDefault();
-            axios.post(`https://mern-9a42.onrender.com/contactus`,{name,phone,email,subject,message})
+            axios.post(`https://localhost:4000/contactus`,{name,phone,email,subject,message})
             .then((res)=>{
                 alert("Mail send succ...")
                 setName("")

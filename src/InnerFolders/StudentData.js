@@ -6,7 +6,7 @@ import axios from 'axios';
 const StudentData = ()=>{
   const [stu, setStu] = useState([]);
   useEffect(()=>{
-    axios.get(`https://mern-9a42.onrender.com/user`)
+    axios.get(`http://localhost:4000/user`)
     .then(res => {
        //console.log(res.data)
        setStu(res.data)

@@ -6,7 +6,7 @@ import axios from 'axios';
 const DeleteStudent = ()=>{
   const [stu, setStu] = useState([]);
   useEffect(()=>{
-    axios.get(`https://mern-9a42.onrender.com/user`)
+    axios.get(`http://localhost:4000/user`)
     .then(res => {
        //console.log(res.data)
        setStu(res.data)
@@ -17,7 +17,7 @@ const DeleteStudent = ()=>{
   })
     const deleteData = (sid)=>{
        // alert(sid);
-       axios.delete(`https://mern-9a42.onrender.com/user/${sid}`)
+       axios.delete(`http://localhost:4000/user/${sid}`)
         .then((res)=>{
             alert("Data deleted succ..");
         })
